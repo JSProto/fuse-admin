@@ -21,7 +21,7 @@ export class AcademyDetailsComponent implements OnInit, OnDestroy
     currentStep: number = 0;
     drawerMode: 'over' | 'side' = 'side';
     drawerOpened: boolean = true;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

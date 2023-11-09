@@ -15,7 +15,7 @@ import { Item } from 'app/modules/admin/apps/file-manager/file-manager.types';
 export class FileManagerDetailsComponent implements OnInit, OnDestroy
 {
     item: Item;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

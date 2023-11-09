@@ -17,7 +17,7 @@ export class DenseLayoutComponent implements OnInit, OnDestroy
     isScreenSmall: boolean;
     navigation: Navigation;
     navigationAppearance: 'default' | 'dense' = 'dense';
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

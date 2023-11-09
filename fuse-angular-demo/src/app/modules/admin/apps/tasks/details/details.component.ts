@@ -32,7 +32,7 @@ export class TasksDetailsComponent implements OnInit, AfterViewInit, OnDestroy
     taskForm: UntypedFormGroup;
     tasks: Task[];
     private _tagsPanelOverlayRef: OverlayRef;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

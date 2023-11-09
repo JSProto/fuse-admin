@@ -16,7 +16,7 @@ export class FuseVerticalNavigationDividerItemComponent implements OnInit, OnDes
     @Input() name: string;
 
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

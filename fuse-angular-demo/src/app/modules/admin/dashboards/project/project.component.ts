@@ -21,7 +21,7 @@ export class ProjectComponent implements OnInit, OnDestroy
     chartYearlyExpenses: ApexOptions = {};
     data: any;
     selectedProject: string = 'ACME Corp. Backend App';
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

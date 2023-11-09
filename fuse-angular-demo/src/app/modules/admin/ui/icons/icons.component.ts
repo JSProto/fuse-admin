@@ -17,7 +17,7 @@ export class IconsComponent implements OnInit, OnDestroy
 
     iconSize: number = 24;
     selectedIcon: string[];
-    private _unsubscribeAll: Subject<any> = new Subject();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

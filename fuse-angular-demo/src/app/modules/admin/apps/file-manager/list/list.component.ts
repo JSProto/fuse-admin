@@ -19,7 +19,7 @@ export class FileManagerListComponent implements OnInit, OnDestroy
     drawerMode: 'side' | 'over';
     selectedItem: Item;
     items: Items;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

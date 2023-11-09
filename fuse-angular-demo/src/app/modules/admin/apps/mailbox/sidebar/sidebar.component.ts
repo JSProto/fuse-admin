@@ -24,7 +24,7 @@ export class MailboxSidebarComponent implements OnInit, OnDestroy
     private _foldersMenuData: FuseNavigationItem[] = [];
     private _labelsMenuData: FuseNavigationItem[] = [];
     private _otherMenuData: FuseNavigationItem[] = [];
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

@@ -17,7 +17,7 @@ export class FuseLoadingBarComponent implements OnChanges, OnInit, OnDestroy
     mode: 'determinate' | 'indeterminate';
     progress: number = 0;
     show: boolean = false;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

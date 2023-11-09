@@ -13,7 +13,7 @@ import { CalendarService } from 'app/modules/admin/apps/calendar/calendar.servic
 export class CalendarSettingsComponent implements OnInit, OnDestroy
 {
     settingsForm: UntypedFormGroup;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

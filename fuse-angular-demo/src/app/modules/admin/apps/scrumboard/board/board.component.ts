@@ -24,7 +24,7 @@ export class ScrumboardBoardComponent implements OnInit, OnDestroy
     private readonly _positionStep: number = 65536;
     private readonly _maxListCount: number = 200;
     private readonly _maxPosition: number = this._positionStep * 500;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

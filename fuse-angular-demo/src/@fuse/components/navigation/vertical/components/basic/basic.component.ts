@@ -19,7 +19,7 @@ export class FuseVerticalNavigationBasicItemComponent implements OnInit, OnDestr
 
     isActiveMatchOptions: IsActiveMatchOptions;
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

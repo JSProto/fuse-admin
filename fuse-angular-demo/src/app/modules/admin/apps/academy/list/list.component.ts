@@ -28,7 +28,7 @@ export class AcademyListComponent implements OnInit, OnDestroy
         hideCompleted$: new BehaviorSubject(false)
     };
 
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

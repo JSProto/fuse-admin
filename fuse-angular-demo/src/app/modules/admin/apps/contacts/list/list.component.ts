@@ -27,7 +27,7 @@ export class ContactsListComponent implements OnInit, OnDestroy
     drawerMode: 'side' | 'over';
     searchInputControl: UntypedFormControl = new UntypedFormControl();
     selectedContact: Contact;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

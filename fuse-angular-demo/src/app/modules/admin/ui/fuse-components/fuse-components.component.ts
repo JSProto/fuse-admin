@@ -17,7 +17,7 @@ export class FuseComponentsComponent implements OnInit, OnDestroy
     drawerMode: 'side' | 'over';
     drawerOpened: boolean;
     menuData: FuseNavigationItem[];
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

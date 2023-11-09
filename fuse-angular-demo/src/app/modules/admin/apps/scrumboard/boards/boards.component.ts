@@ -16,7 +16,7 @@ export class ScrumboardBoardsComponent implements OnInit, OnDestroy
     boards: Board[];
 
     // Private
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

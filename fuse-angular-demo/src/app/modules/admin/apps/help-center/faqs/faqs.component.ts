@@ -12,7 +12,7 @@ import { FaqCategory } from 'app/modules/admin/apps/help-center/help-center.type
 export class HelpCenterFaqsComponent implements OnInit, OnDestroy
 {
     faqCategories: FaqCategory[];
-    private _unsubscribeAll: Subject<any> = new Subject();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

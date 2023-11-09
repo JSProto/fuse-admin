@@ -29,7 +29,7 @@ export class TasksListComponent implements OnInit, OnDestroy
         incomplete: 0,
         total     : 0
     };
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

@@ -18,7 +18,7 @@ export class ChatsComponent implements OnInit, OnDestroy
     filteredChats: Chat[];
     profile: Profile;
     selectedChat: Chat;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

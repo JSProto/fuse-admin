@@ -12,7 +12,7 @@ export class CardedRightSidebar2ContentScrollComponent implements OnInit, OnDest
 {
     drawerMode: 'over' | 'side' = 'side';
     drawerOpened: boolean = true;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

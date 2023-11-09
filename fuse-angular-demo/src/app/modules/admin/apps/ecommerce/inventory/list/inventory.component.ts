@@ -56,7 +56,7 @@ export class InventoryListComponent implements OnInit, AfterViewInit, OnDestroy
     tags: InventoryTag[];
     tagsEditMode: boolean = false;
     vendors: InventoryVendor[];
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

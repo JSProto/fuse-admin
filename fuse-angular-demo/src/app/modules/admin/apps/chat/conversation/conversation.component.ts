@@ -17,7 +17,7 @@ export class ConversationComponent implements OnInit, OnDestroy
     chat: Chat;
     drawerMode: 'over' | 'side' = 'side';
     drawerOpened: boolean = false;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

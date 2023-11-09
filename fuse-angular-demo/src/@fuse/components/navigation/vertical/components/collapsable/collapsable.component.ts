@@ -27,7 +27,7 @@ export class FuseVerticalNavigationCollapsableItemComponent implements OnInit, O
     isCollapsed: boolean = true;
     isExpanded: boolean = false;
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

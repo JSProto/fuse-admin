@@ -25,7 +25,7 @@ export class ScrumboardCardDetailsComponent implements OnInit, OnDestroy
     filteredLabels: Label[];
 
     // Private
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

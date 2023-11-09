@@ -11,7 +11,7 @@ import { takeUntil } from 'rxjs/operators';
 export class MasonryComponent implements OnInit
 {
     columns: number = 4;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

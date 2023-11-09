@@ -19,7 +19,7 @@ export class MailboxListComponent implements OnInit, OnDestroy
     mailsLoading: boolean = false;
     pagination: any;
     selectedMail: Mail;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

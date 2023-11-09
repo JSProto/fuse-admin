@@ -22,7 +22,7 @@ export class CalendarSidebarComponent implements OnInit, OnDestroy
     calendarColors: any = calendarColors;
     calendars: Calendar[];
     private _editPanelOverlayRef: OverlayRef;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

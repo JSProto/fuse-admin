@@ -24,7 +24,7 @@ export class ShortcutsComponent implements OnInit, OnDestroy
     shortcutForm: UntypedFormGroup;
     shortcuts: Shortcut[];
     private _overlayRef: OverlayRef;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

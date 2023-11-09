@@ -22,7 +22,7 @@ export class MessagesComponent implements OnInit, OnDestroy
     messages: Message[];
     unreadCount: number = 0;
     private _overlayRef: OverlayRef;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

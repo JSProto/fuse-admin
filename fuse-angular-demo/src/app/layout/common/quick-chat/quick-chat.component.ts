@@ -21,7 +21,7 @@ export class QuickChatComponent implements OnInit, OnDestroy
     selectedChat: Chat;
     private _scrollStrategy: ScrollStrategy = this._scrollStrategyOptions.block();
     private _overlay: HTMLElement;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

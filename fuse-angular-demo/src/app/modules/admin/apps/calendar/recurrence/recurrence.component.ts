@@ -18,7 +18,7 @@ export class CalendarRecurrenceComponent implements OnInit, OnDestroy
     recurrenceForm: UntypedFormGroup;
     recurrenceFormValues: any;
     weekdays: CalendarWeekday[];
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

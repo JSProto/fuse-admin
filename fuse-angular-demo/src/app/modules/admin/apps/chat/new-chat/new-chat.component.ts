@@ -15,7 +15,7 @@ export class NewChatComponent implements OnInit, OnDestroy
 {
     @Input() drawer: MatDrawer;
     contacts: Contact[] = [];
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

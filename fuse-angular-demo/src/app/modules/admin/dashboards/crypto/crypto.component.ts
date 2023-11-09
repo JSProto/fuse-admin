@@ -21,7 +21,7 @@ export class CryptoComponent implements OnInit, OnDestroy
     drawerMode: 'over' | 'side' = 'side';
     drawerOpened: boolean = true;
     watchlistChartOptions: ApexOptions = {};
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

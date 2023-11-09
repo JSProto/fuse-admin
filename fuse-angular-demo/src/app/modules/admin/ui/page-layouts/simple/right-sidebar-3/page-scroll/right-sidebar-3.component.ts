@@ -12,7 +12,7 @@ export class SimpleRightSidebar3PageScrollComponent implements OnInit, OnDestroy
 {
     drawerMode: 'over' | 'side' = 'side';
     drawerOpened: boolean = true;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

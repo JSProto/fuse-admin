@@ -32,7 +32,7 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
     contacts: Contact[];
     countries: Country[];
     private _tagsPanelOverlayRef: OverlayRef;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

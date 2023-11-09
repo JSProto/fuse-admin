@@ -29,7 +29,7 @@ export class SettingsComponent implements OnInit, OnDestroy
     scheme: 'dark' | 'light';
     theme: string;
     themes: [string, any][] = [];
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

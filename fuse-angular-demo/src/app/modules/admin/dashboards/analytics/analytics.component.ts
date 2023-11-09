@@ -24,7 +24,7 @@ export class AnalyticsComponent implements OnInit, OnDestroy
     chartLanguage: ApexOptions;
     data: any;
 
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

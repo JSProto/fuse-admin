@@ -16,7 +16,7 @@ export class FuseHorizontalNavigationDividerItemComponent implements OnInit, OnD
     @Input() name: string;
 
     private _fuseHorizontalNavigationComponent: FuseHorizontalNavigationComponent;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

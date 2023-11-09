@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit, OnDestroy
 {
     @Input() drawer: MatDrawer;
     profile: Profile;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor

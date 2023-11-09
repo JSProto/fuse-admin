@@ -52,7 +52,7 @@ export class CalendarComponent implements OnInit, AfterViewInit, OnDestroy
     viewTitle: string;
     private _eventPanelOverlayRef: OverlayRef;
     private _fullCalendarApi: FullCalendar;
-    private _unsubscribeAll: Subject<any> = new Subject<any>();
+    private _unsubscribeAll = new Subject<void>();
 
     /**
      * Constructor
