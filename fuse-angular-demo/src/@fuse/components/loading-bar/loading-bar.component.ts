@@ -19,6 +19,8 @@ export class FuseLoadingBarComponent implements OnChanges, OnInit, OnDestroy
     show: boolean = false;
     private _unsubscribeAll = new Subject<void>();
 
+    progress$ = this._fuseLoadingBarService.progress$
+
     /**
      * Constructor
      */
